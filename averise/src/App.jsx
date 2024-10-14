@@ -5,6 +5,7 @@ import './App.css'
 import {Navbar} from "./components/Navbar.jsx";
 import {Hero} from "./components/Hero.jsx";
 import {About} from "./components/About.jsx";
+import {ArticleSection} from "./components/ArticleSection.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,14 +13,17 @@ function App() {
   return (
       <>
           <div className="main">
-          <Navbar/>
-          <Hero/>
+              <Navbar/>
+              <Hero/>
           </div>
           <div>
               <About/>
               <hr className="bg-gray-300 h-px border-0 mx-24"/>
           </div>
-          <About/>
+          <div>
+              <ArticleSection/>
+              <hr className="bg-gray-300 h-px border-0 mx-24"/>
+          </div>
 
       </>
   )
