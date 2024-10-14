@@ -3,7 +3,7 @@ import AboutImg from '../assets/About.jpg'
 
 
 export const ArticleSection = () => {
-    return (<div className="grid grid-cols-1 md:grid md:grid-cols-2 mx-20 mt-16 p-16 ">
+    return (<div className="grid grid-cols-1 md:grid md:grid-cols-2 sm:mx-5 md:mx-20 mt-16 p-16 gap-5 ">
             <div className="sm:mb-5 md:m-auto ">
                 <img src={AboutImg} alt="Code Image"
                      className="w-3/4 rounded-full rotate-3 grayscale hover:rotate-1 transition-filter duration-700 ease-in-out hover:grayscale-0"/>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Hero = () => {
-    return (<div className="flex flex-col text-white mx-20 mt-16 p-16 " >
+    return (<div className="flex flex-col text-white sm:mx-5 md:mx-20 mt-16 p-16 " >
             <h1 className=" text-6xl lg:text-8xl text-left tracking-wide">WE ARE AVERISE</h1>
             <h1 className=" py-2 text-4xl lg:text-6xl text-left tracking-widest bg-gradient-to-r from-green-500 to-green-900 text-transparent bg-clip-text">An
                 Innovative Agency For International Tax And Consultancy.</h1>
