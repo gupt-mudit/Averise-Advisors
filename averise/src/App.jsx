@@ -8,8 +8,6 @@ import {About} from "./components/About.jsx";
 import {ArticleSection} from "./components/ArticleSection.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
       <>
           <div className="main">
