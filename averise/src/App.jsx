@@ -1,30 +1,21 @@
 import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import {Navbar} from "./components/Navbar.jsx";
-import {Hero} from "./components/Hero.jsx";
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import {Home} from "./components/Home.jsx";
+import {ArticlesPage} from "./components/ArticlesPage.jsx";
 import {About} from "./components/About.jsx";
-import {ArticleSection} from "./components/ArticleSection.jsx";
 
 function App() {
-  return (
-      <>
-          <div className="main">
-              <Navbar/>
-              <Hero/>
-          </div>
-          <div>
-              <About/>
-              <hr className="bg-gray-300 h-px border-0 mx-24"/>
-          </div>
-          <div>
-              <ArticleSection/>
-              <hr className="bg-gray-300 h-px border-0 mx-24"/>
-          </div>
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Navigate to="/" replace />} />
+                <Route path="/articles" element={<ArticlesPage />} />
+            </Routes>
 
-      </>
-  )
+        </Router>
+    )
 }
 
 export default App

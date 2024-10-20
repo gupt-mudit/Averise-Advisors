@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .main{
   background-image: url("./assets/v300batch2-nunoon-13.jpg");
   background-size: cover;
@@ -7,3 +10,25 @@
 :root {
   font-family: "Poppins", sans-serif;
 }
+
+.glass-effect{
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);}
+
+.glass-effect-nav{
+  /* From https://css.glass */
+  background: rgba(227, 227, 227, 0.98);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+}
+.glass-effect-contact{/* From https://css.glass */
+  background: rgba(80, 81, 80, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);}

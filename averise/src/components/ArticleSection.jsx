@@ -1,38 +1,71 @@
 import React from 'react';
-import AboutImg from '../assets/About.jpg'
+import { ArticleCard } from "./ArticleCard.jsx";
 
+const articleList = [
+    {
+        title: "The Importance of Transfer Pricing in Global Operations",
+        content: "As companies expand globally, transfer pricing becomes a crucial factor in ensuring tax compliance and minimizing risks. Transfer pricing refers to the pricing of goods, services, or intangibles transferred between related entities within a multinational enterprise.",
+        img: "../assets/card-demo.jpg"
+    },
+    {
+        title: "Sustainable Tax Strategies for Multinational Enterprises",
+        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
+        img: "../assets/card-demo.jpg"
+    },
+    {
+        title: "Sustainable Tax Strategies for Multinational Enterprises",
+        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
+        img: "../assets/card-demo.jpg"
+    },
+    {
+        title: "Sustainable Tax Strategies for Multinational Enterprises",
+        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
+        img: "../assets/card-demo.jpg"
+    },
+    {
+        title: "Sustainable Tax Strategies for Multinational Enterprises",
+        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
+        img: "../assets/card-demo.jpg"
+    },
+    {
+        title: "Sustainable Tax Strategies for Multinational Enterprises",
+        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
+        img: "../assets/card-demo.jpg"
+    },
+    {
+        title: "Sustainable Tax Strategies for Multinational Enterprises",
+        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
+        img: "../assets/card-demo.jpg"
+    },
+    {
+        title: "Sustainable Tax Strategies for Multinational Enterprises",
+        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
+        img: "../assets/card-demo.jpg"
+    }
+]
 
 export const ArticleSection = () => {
-    return (<div className="grid grid-cols-1 md:grid md:grid-cols-2 sm:mx-5 md:mx-20 mt-16 p-16 gap-5 ">
-            <div className="sm:mb-5 md:m-auto ">
-                <img src={AboutImg} alt="Code Image"
-                     className="w-3/4 rounded-full rotate-3 grayscale hover:rotate-1 transition-filter duration-700 ease-in-out hover:grayscale-0"/>
+    return (
+        <div className="flex flex-col items-center justify-center pt-28 px-10">
+            <h1 className="text-4xl lg:text-6xl tracking-wide">ARTICLES</h1>
+            <div className="flex flex-wrap gap-8  ml-2 mt-10 p-20">
+                {articleList.slice(0, 6).map((option, index) => (
 
+                    <ArticleCard
+                        key={index}
+                        title={option.title}
+                        content={option.content.length >= 200 ? option.content.slice(0, 200) : option.content}
+                        img={option.img}
+                    />
+                ))}
             </div>
-            <div className="flex flex-col">
-                <h1 className=" text-4xl lg:text-5xl text-left tracking-wide">ARTICLES</h1>
-                <h1 className=" mt-10 py-2 text-3xl lg:text-4xl text-left tracking-widest bg-gradient-to-r from-green-500 to-green-900 text-transparent bg-clip-text">An
-                    Innovative Agency For International Tax And Consultancy.</h1>
-                <p className="font-thin text-lg mt-12  text-left items-center text-neutral-500 max-w-5xl">
-                    Are you ready to be part of the next big thing in technology? Dive into the Web3 community and
-                    unlock
-                    the future of the internet! Connect with innovators, developers, and enthusiasts who are
-                    transforming
-                    digital experiences with blockchain, decentralized applications, and cutting-edge tech. Whether
-                    you're a
-                    seasoned pro or just curious, there's a place for you here. Network, learn, and grow with a vibrant
-                    community that's shaping the future of the web.
-                </p>
-                <div className="flex">
-                    <a href="#"
-                       className="mt-28 mb-8 px-10 py-1 text-2xl rounded-md bg-gradient-to-r from-green-400 to-green-700 text-transparent bg-clip-text border border-green-400 hover:scale-105 transition-all">
-                        <h1>Contact us</h1>
+            <div className="flex">
+                <a href="#"
+                   className="mb-8 px-10 py-1 text-2xl rounded-md bg-gradient-to-r from-green-600 to-green-700 text-white border border-green-400 hover:scale-105 transition-all">
+                    <h1>Check More</h1>
 
-                    </a>
-                </div>
+                </a>
             </div>
-
         </div>
-
-    )
+    );
 }
