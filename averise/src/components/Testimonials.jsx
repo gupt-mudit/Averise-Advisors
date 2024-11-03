@@ -1,70 +1,61 @@
-import React from 'react'
+import React from 'react';
 import user1 from "../assets/user1.jpg";
+
 export const Testimonials = () => {
     const testimonials = [
         {
-            user: "John Doe",
-            company: "Stellar Solutions",
+            user: "Aarav Sharma",
+            company: "Tech Innovations India",
             image: user1,
-            text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+            text: "The team's expertise in navigating complex regulatory landscapes has been invaluable. Their proactive approach not only simplified our compliance processes but also enhanced our operational efficiency.",
         },
         {
-            user: "Jane Smith",
-            company: "Blue Horizon Technologies",
+            user: "Priya Gupta",
+            company: "Smart Solutions Pvt. Ltd.",
             image: user1,
-            text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+            text: "Working with Averise Advisors has been a game-changer for us. Their tailored strategies have helped us achieve significant tax savings while ensuring full compliance with regulations.",
         },
         {
-            user: "David Johnson",
-            company: "Quantum Innovations",
+            user: "Rohit Verma",
+            company: "Future Vision Enterprises",
             image: user1,
-            text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
+            text: "Averise Advisors provided us with insightful guidance that helped us expand into international markets. Their deep understanding of global tax frameworks is truly commendable.",
         },
         {
-            user: "Ronee Brown",
-            company: "Fusion Dynamics",
+            user: "Ananya Singh",
+            company: "EcoTech Systems",
             image: user1,
-            text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+            text: "Their dedication to integrating ESG principles into our business strategy has transformed how we operate. We now feel confident about our sustainability efforts and corporate responsibility.",
         },
         {
-            user: "Michael Wilson",
-            company: "Visionary Creations",
+            user: "Vikram Patel",
+            company: "Innovatech Solutions",
             image: user1,
-            text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+            text: "The team's professionalism and commitment to excellence are unmatched. They helped us streamline our transfer pricing strategies, and we have seen remarkable results since.",
         },
         {
-            user: "Emily Davis",
-            company: "Synergy Systems",
+            user: "Nisha Mehta",
+            company: "Global Trade Partners",
             image: user1,
-            text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+            text: "Averise Advisors truly understands the challenges of doing business in a global market. Their support has been crucial in navigating complex tax regulations and compliance requirements.",
         },
     ];
 
     return (
-        <div className="flex flex-col items-center justify-center  pt-28 px-14">
-            <h1 className=" text-4xl lg:text-6xl tracking-wide text-center">WHAT PEOPLE ARE SAYING</h1>
+        <div className="flex flex-col items-center justify-center pt-28 px-14">
+            <h1 className="text-4xl lg:text-6xl tracking-wide text-center">WHAT PEOPLE ARE SAYING</h1>
             <div className="md:p-20 flex flex-wrap justify-center">
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
                         <div className="rounded-md p-6 text-md border font-thin glass-effect">
-                            <p>{testimonial.text}</p>
-                            <div className="flex mt-8 items-start">
-                                <img
-                                    className="w-12 h-12 mr-6 rounded-full border border-neutral-300"
-                                    src={testimonial.image}
-                                    alt=""
-                                />
-                                <div>
-                                    <h6>{testimonial.user}</h6>
-                                    <span className="text-sm font-normal italic text-neutral-600">
-                    {testimonial.company}
-                  </span>
-                                </div>
-                            </div>
+                            {/* Display the testimonial text */}
+                            <p className="mb-4">{testimonial.text}</p>
+                            {/* Display the user's name in italic */}
+                            <h6 className="font-semibold italic">{testimonial.user}</h6>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-    )
+    );
 }
