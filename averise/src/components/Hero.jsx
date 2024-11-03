@@ -3,9 +3,9 @@ import HeroImg from '../assets/Hero.jpg'
 import AboutImg from "../assets/About.jpg";
 export const Hero = () => {
 
-    return (<div className="flex flex-col px-6 md:pl-32 -mt-12">
+    return (<div className="flex flex-col px-6 lg:pl-32 -mt-12">
             <h1 className=" text-6xl lg:text-8xl text-left  tracking-wide">AVERISE ADVISORS</h1>
-            <div className=" grid grid-cols-1 md:grid-cols-2 justify-between gap-x-20">
+            <div className=" grid grid-cols-1 lg:grid-cols-2 justify-between gap-x-20">
                 <div className="flex flex-col">
 
                     <h1 className=" py-2 text-4xl lg:text-6xl text-left tracking-widest bg-gradient-to-r from-green-500 to-green-900 text-transparent bg-clip-text">An
@@ -22,9 +22,9 @@ export const Hero = () => {
                         </a>
                     </div>
                 </div>
-                <div className="mt-10 mb-1">
+                <div className="mt-10 mb-4">
                     <img src={HeroImg} alt="Code Image"
-                         className=" w-3/4 rounded-2xl transition-filter duration-700 ease-in-out hover:grayscale-0"/>
+                         className=" w-3/4  rounded-2xl transition-filter duration-700 ease-in-out"/>
 
                 </div>
             </div>
