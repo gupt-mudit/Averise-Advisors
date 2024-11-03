@@ -38,8 +38,7 @@ const Footer = () => {
                 <div>
                     <p className="mb-4 flex flex-col font-thin">
                         <span className="text-xl font-bold mb-3 ">About Averise Advisors</span>
-                        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-                    </p>
+                      Providing tailored solutions in international tax, transfer pricing, and ESG integration. With our deep expertise and pragmatic understanding of diverse market landscapes, we help businesses navigate the complexities of global taxation and compliance.                    </p>
                     <div className="space-x-3 mt-4">
                         <a href="#" className="bg-gray-100 p-2 rounded-full inline-block text-xl hover:bg-green-600">
                             <FontAwesomeIcon icon={faFacebook} />
