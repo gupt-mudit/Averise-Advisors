@@ -22,7 +22,7 @@ export const Navbar = () => {
             <a href="/" className="pb-7 flex flex-col items-center hover:scale-105 transition-all">
                 <img src={Logo} className="" alt="Vite" />
             </a>
-            <ul className="hidden xl:flex items-center text-base gap-5 tracking-widest font-thin">
+            <ul className="hidden xl:flex items-center text-base gap-5 tracking-widest font-thin underline underline-offset-8">
                 <li className="p-3 rounded-md cursor-pointer transition-all">
                     <HashLink to="/articles" className="hover:bg-gradient-to-r from-green-500 to-green-900 hover:text-transparent hover:bg-clip-text">articles</HashLink>
                 </li>

@@ -5,29 +5,28 @@ export const ServicesCard = () => {
         {
             title: "International Tax Advisory",
             features: [
-                "Global tax strategy optimization and risk mitigation",
-                "Cross-border tax planning and compliance",
-                "Corporate tax structuring for multinational operations",
-                "Support with international tax disputes and resolution",
+                "Comprehensive global tax strategy optimization, reducing risk and enhancing compliance",
+                "Advanced cross-border tax planning to support seamless international operations",
+                "Corporate tax structuring tailored to multinational business objectives",
+                "Proactive support in navigating international tax disputes and resolutions, safeguarding your interests",
             ],
         },
         {
             title: "Transfer Pricing Solutions",
-
             features: [
-                "Transfer pricing documentation and compliance",
-                "Benchmarking analysis for arm’s length pricing",
-                "Assistance with Advance Pricing Agreements (APAs) and dispute resolution",
-                "Intercompany transaction structuring",
+                "Customized transfer pricing documentation to meet regulatory standards across jurisdictions",
+                "Robust benchmarking analysis ensuring arm’s length compliance and alignment with market expectations",
+                "Strategic assistance with Advance Pricing Agreements (APAs) and dispute resolution processes",
+                "Expert structuring of intercompany transactions to optimize global tax efficiency",
             ],
         },
         {
             title: "ESG Strategy & Compliance",
             features: [
-                "Development of tailored ESG strategies",
-                "ESG and sustainability reporting aligned with global standards",
-                "ESG risk management and compliance",
-                "Designing and implementing impactful CSR initiatives to engage stakeholders and contribute positively to society.",
+                "Development of bespoke ESG strategies that align with both business goals and societal expectations",
+                "Comprehensive ESG and sustainability reporting, harmonized with leading global frameworks",
+                "Risk management solutions to address ESG-related compliance and resilience challenges",
+                "Design and implementation of high-impact CSR initiatives, fostering meaningful stakeholder engagement and contributing to sustainable societal progress",
             ],
         },
     ];

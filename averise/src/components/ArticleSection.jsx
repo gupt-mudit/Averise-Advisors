@@ -46,9 +46,9 @@ const articleList = [
 
 export const ArticleSection = () => {
     return (
-        <div className="flex flex-col items-center justify-center pt-28 px-10">
+        <div className="flex flex-col items-center justify-center pt-28 px-10 ">
             <h1 className="text-4xl lg:text-6xl tracking-wide">ARTICLES</h1>
-            <div className="flex flex-wrap gap-8  ml-2 mt-10 p-20">
+            <div className="flex flex-wrap gap-8 items-center justify-center  ml-2 mt-10 p-20">
                 {articleList.slice(0, 6).map((option, index) => (
 
                     <ArticleCard

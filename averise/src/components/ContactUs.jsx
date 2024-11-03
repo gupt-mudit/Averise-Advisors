@@ -38,16 +38,16 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="grid grid-cols-1 md:grid md:grid-cols-2 sm:mx-5 md:mx-20 mt-16 p-16  gap-5">
-            <div className="sm:mb-7 md:m-auto ">
+        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 sm:mx-5 md:mx-20 mt-16 p-16  gap-5">
+            <div className="sm:mb-7 md:m-auto hidden lg:block lg:m-auto ">
                 <img src={ContactImg} alt="Code Image"
-                     className="w-3/4 rounded-2xl rotate-3 grayscale hover:rotate-1 transition-filter duration-700 ease-in-out hover:grayscale-0"/>
+                     className="w-3/4 rounded-2xl transition-filter duration-700 ease-in-out hover:grayscale-0"/>
 
             </div>
             <div className="items-center justify-center pt-28 px-14">
                 <div className="flex flex-col items-center justify-center  ">
                     <h1 className=" text-4xl lg:text-6xl tracking-wide">CONTACT US</h1>
-                    <p className="font-thin text-lg mt-12  text-left items-center text-neutral-500 max-w-5xl">
+                    <p className="font-thin text-lg mt-12 sm:text-center lg:text-left lg:items-center  max-w-5xl">
                         Fill out the form below. Our team is ready to assist you with the best solutions to meet your specific needs.
                     </p>
                 </div>
