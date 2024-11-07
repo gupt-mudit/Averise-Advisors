@@ -14,7 +14,7 @@ export const Hero = () => {
                     <p className="tracking-wide text-xl mt-24 text-left items-center max-w-5xl">
                         <span className="font-semibold">Averise Advisors</span> inspired by <span
                         className="font-semibold">"Aver" </span>for conviction and
-                        <span className="font-semibold"> "Rise" </span> for growth—stands for empowering global
+                        <span className="font-semibold"> "Rise" </span> for growth stands for empowering global
                         businesses to thrive with confidence. We
                         specialize in international tax compliance, transfer pricing strategies, and ESG integration,
                         offering tailored solutions to navigate complex global tax regulations. Our team is committed to
