@@ -56,6 +56,7 @@ export const ArticleSection = () => {
                 {articleList.slice(-6).map((option, index) => (
                     <ArticleCard
                         key={index}
+                        id={option.id}
                         title={option.title}
                         content={option.content.length > contentLength ? `${option.content.slice(0, contentLength)}...` : option.content}
                         img={option.img}
