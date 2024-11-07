@@ -44,7 +44,7 @@ const ContactUs = () => {
                      className="w-3/5 rounded-2xl transition-filter duration-700 ease-in-out hover:grayscale-0"/>
 
             </div>
-            <div className="items-center justify-center p-16">
+            <div className="items-center justify-center xl:p-16">
                 <div className="flex flex-col items-center justify-center  ">
                     <h1 className=" text-4xl lg:text-6xl tracking-wide">CONTACT US</h1>
                     <p className="font-thin text-lg mt-6 sm:text-center lg:text-left lg:items-center  max-w-5xl">
