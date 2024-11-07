@@ -29,7 +29,8 @@ const ArticleDetail = () => {
 
     return (
         <div className="main">
-        <div className="container mx-auto p-8 -mt-16">
+            <Navbar/>
+        <div className="container mx-auto p-8 ">
 
             <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
                 <img src={article.img} alt={article.title} className="w-full h-64 object-cover" />

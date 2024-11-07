@@ -32,7 +32,7 @@ export const Hero = () => {
                         </a>
                     </div>
                 </div>
-                <div className="-mt-2 mb-4 p-16">
+                <div className="hidden md:block -mt-2 mb-4 p-16">
                     <img src={HeroImg} alt="Code Image"
                          className=" w-3/4  rounded-2xl transition-filter duration-700 ease-in-out"/>
 
