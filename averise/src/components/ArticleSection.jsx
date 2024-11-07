@@ -1,52 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import { ArticleCard } from "./ArticleCard.jsx";
+import {get, getDatabase, ref} from "firebase/database";
+import app from "../firebaseConfig.js";
 
-const articleList = [
-    {
-        title: "The Importance of Transfer Pricing in Global Operations",
-        content: "As companies expand globally, transfer pricing becomes a crucial factor in ensuring tax compliance and minimizing risks. Transfer pricing refers to the pricing of goods, services, or intangibles transferred between related entities within a multinational enterprise.",
-        img: "../assets/card-demo.jpg"
-    },
-    {
-        title: "Sustainable Tax Strategies for Multinational Enterprises",
-        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
-        img: "../assets/card-demo.jpg"
-    },
-    {
-        title: "Sustainable Tax Strategies for Multinational Enterprises",
-        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
-        img: "../assets/card-demo.jpg"
-    },
-    {
-        title: "Sustainable Tax Strategies for Multinational Enterprises",
-        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
-        img: "../assets/card-demo.jpg"
-    },
-    {
-        title: "Sustainable Tax Strategies for Multinational Enterprises",
-        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
-        img: "../assets/card-demo.jpg"
-    },
-    {
-        title: "Sustainable Tax Strategies for Multinational Enterprises",
-        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
-        img: "../assets/card-demo.jpg"
-    },
-    {
-        title: "Sustainable Tax Strategies for Multinational Enterprises",
-        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
-        img: "../assets/card-demo.jpg"
-    },
-    {
-        title: "Sustainable Tax Strategies for Multinational Enterprises",
-        content: "Multinational enterprises are increasingly adopting sustainable tax strategies to address regulatory pressures and public expectations. In this article, we explore the impact of tax reforms on global operations.",
-        img: "../assets/card-demo.jpg"
-    }
-];
+
 
 export const ArticleSection = () => {
     const [contentLength, setContentLength] = useState(200); // Default content length
+    let [articleList, setArticleList] = useState([]);
 
+    const fetchData = async () => {
+        const db = getDatabase(app);
+        const dbRef = ref(db, "articles");
+        const snapshot = await get(dbRef);
+        if (snapshot.exists()) {
+            // Map articles to include their Firebase key as `id`
+            const articlesWithIds = Object.entries(snapshot.val()).map(([key, value]) => ({
+                id: key,
+                ...value
+            }));
+            setArticleList(articlesWithIds);
+        } else {
+            alert("Error fetching articles");
+        }
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []);
     useEffect(() => {
         const updateContentLength = () => {
             if (window.innerWidth < 640) {
@@ -72,7 +53,7 @@ export const ArticleSection = () => {
         <div className="flex flex-col items-center justify-center pt-28 px-10 ">
             <h1 className="text-4xl lg:text-6xl tracking-wide">ARTICLES</h1>
             <div className="flex flex-wrap gap-8 items-center justify-center  ml-2 mt-10 p-20">
-                {articleList.slice(0, 6).map((option, index) => (
+                {articleList.slice(-6).map((option, index) => (
                     <ArticleCard
                         key={index}
                         title={option.title}
@@ -82,7 +63,7 @@ export const ArticleSection = () => {
                 ))}
             </div>
             <div className="flex">
-                <a href="#"
+                <a href="/articles"
                    className="mb-8 px-10 py-1 text-2xl rounded-md bg-gradient-to-r from-green-600 to-green-700 text-white border border-green-400 hover:scale-105 transition-all">
                     <h1>Check More</h1>
                 </a>
