@@ -19,7 +19,7 @@ export const Navbar = () => {
                     <HashLink to="/#services" className="hover:bg-gradient-to-r from-green-500 to-green-900 hover:text-transparent hover:bg-clip-text">services</HashLink>
                 </li>
             </ul>
-            <a href="/" className=" flex flex-col items-center hover:scale-105 transition-all sm:-mt-32 xl:-mt-36">
+            <a href="/" className=" flex flex-col items-center hover:scale-105 transition-all -mt-32 xl:-mt-36">
                 <img src={Logo} className="" alt="Vite" />
             </a>
             <ul className="hidden xl:flex items-center text-base gap-5 tracking-widest font-thin underline underline-offset-8 ">
@@ -32,6 +32,7 @@ export const Navbar = () => {
                 <li className="p-3 rounded-md cursor-pointer transition-all">
                     <HashLink to="/#contact" className="hover:bg-gradient-to-r from-green-500 to-green-900 hover:text-transparent hover:bg-clip-text">contact</HashLink>
                 </li>
+
             </ul>
 
             {isMenuOpen ? (
