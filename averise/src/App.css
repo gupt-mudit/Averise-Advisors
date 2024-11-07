@@ -2,10 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 .main{
-  background-image: url("./assets/v300batch2-nunoon-13.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  height :100%;
+ 
 }
 :root {
   font-family: "Poppins", sans-serif;
