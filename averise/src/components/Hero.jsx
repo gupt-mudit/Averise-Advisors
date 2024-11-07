@@ -11,7 +11,7 @@ export const Hero = () => {
                         ADVISORS</h1>
                     <h1 className=" py-2 text-3xl lg:text-4xl text-left font-thin tracking-widest bg-gradient-to-r from-green-500 to-green-900 text-transparent bg-clip-text  dm-serif-text-regular italic">
                         Your Trusted Global Tax Advisor</h1>
-                    <p className="tracking-wide text-xl mt-12 text-left items-center max-w-5xl">
+                    <p className="tracking-wide text-xl mt-5 text-left items-center max-w-5xl">
                         <span className="font-semibold">Averise Advisors</span> inspired by <span
                         className="font-semibold">"Aver" </span>for conviction and
                         <span className="font-semibold"> "Rise" </span> for growth stands for empowering global
