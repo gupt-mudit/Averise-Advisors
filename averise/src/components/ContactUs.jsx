@@ -41,10 +41,10 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 sm:mx-5 md:mx-20 mt-16 p-16  gap-5">
             <div className="sm:mb-7 md:m-auto hidden lg:block lg:m-auto ">
                 <img src={ContactImg} alt="Code Image"
-                     className="w-3/4 rounded-2xl transition-filter duration-700 ease-in-out hover:grayscale-0"/>
+                     className="w-3/5 rounded-2xl transition-filter duration-700 ease-in-out hover:grayscale-0"/>
 
             </div>
-            <div className="items-center justify-center pt-28 px-14">
+            <div className="items-center justify-center  px-14">
                 <div className="flex flex-col items-center justify-center  ">
                     <h1 className=" text-4xl lg:text-6xl tracking-wide">CONTACT US</h1>
                     <p className="font-thin text-lg mt-12 sm:text-center lg:text-left lg:items-center  max-w-5xl">

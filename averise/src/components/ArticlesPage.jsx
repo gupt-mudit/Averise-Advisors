@@ -70,9 +70,10 @@ export const ArticlesPage = () => {
     useEffect(() => {
         fetchData();
     }, []);
-   return (<div className="main">
-        <Navbar/>
-       <div className="flex flex-col  justify-center px-10 -mt-16">
+   return (
+       <div><Navbar/>
+       <div className="main pt-10">
+       <div className="flex flex-col  justify-center px-10">
            <h1 className="text-4xl lg:text-4xl tracking-wide ml-24">ARTICLES</h1>
            <div className="flex flex-wrap gap-8  ml-2 p-20">
                {articleList.map((option, index) => (
@@ -88,6 +89,8 @@ export const ArticlesPage = () => {
            </div>
        </div>
 
-    </div>)
+    </div>
+       </div>
+   )
 
 }

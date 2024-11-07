@@ -32,9 +32,9 @@ export const ServicesCard = () => {
     ];
     return (
         <div className="mt-10 md:p-20">
-            <div className="flex flex-wrap">
+            <div className="grid sm:grid-cols-1 lg:grid-cols-3 ">
                 {pricingOptions.map((option, index) => (
-                    <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2 ">
+                    <div key={index} className="w-full p-2 ">
                         <div className="p-10 border  rounded-xl glass-effect">
                             <p className="text-4xl mb-8 bg-gradient-to-r from-green-600 to-green-900 text-transparent bg-clip-text">
                                 {option.title}

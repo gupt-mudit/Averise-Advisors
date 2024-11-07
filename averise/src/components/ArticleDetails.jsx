@@ -29,7 +29,6 @@ const ArticleDetail = () => {
 
     return (
         <div className="main">
-            <Navbar/>
         <div className="container mx-auto p-8 -mt-16">
 
             <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">

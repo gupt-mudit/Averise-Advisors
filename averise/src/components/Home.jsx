@@ -9,9 +9,9 @@ import Footer from "./Footer.jsx";
 import React from "react";
 
 export const Home = () => {
-    return (<div>
-        <div className="main">
-            <Navbar/>
+    return (<div id="home" >
+         <Navbar/>
+        <div  className="main pt-10">
             <Hero/>
         </div>
         <div id="about">

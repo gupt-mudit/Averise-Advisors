@@ -8,7 +8,7 @@ export const About = () => {
                 <img
                     src={AboutImg}
                     alt="Code Image"
-                    className="w-3/4 rounded-md transition-filter duration-700 ease-in-out hover:grayscale-0"
+                    className="w-1/2 rounded-md transition-filter duration-700 ease-in-out hover:grayscale-0"
                 />
             </div>
             <div className="flex flex-col text-center lg:text-left items-center lg:items-start">
