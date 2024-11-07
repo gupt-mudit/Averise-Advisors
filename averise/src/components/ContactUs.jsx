@@ -44,14 +44,14 @@ const ContactUs = () => {
                      className="w-3/5 rounded-2xl transition-filter duration-700 ease-in-out hover:grayscale-0"/>
 
             </div>
-            <div className="items-center justify-center  px-14">
+            <div className="items-center justify-center p-16">
                 <div className="flex flex-col items-center justify-center  ">
                     <h1 className=" text-4xl lg:text-6xl tracking-wide">CONTACT US</h1>
-                    <p className="font-thin text-lg mt-12 sm:text-center lg:text-left lg:items-center  max-w-5xl">
+                    <p className="font-thin text-lg mt-6 sm:text-center lg:text-left lg:items-center  max-w-5xl">
                         Fill out the form below. Our team is ready to assist you with the best solutions to meet your specific needs.
                     </p>
                 </div>
-                <div className="mt-10">
+                <div className="mt-3">
                     <form onSubmit={handleSubmit}
                           className="max-w-xl mx-auto p-6 rounded-lg shadow-md glass-effect-contact ">
                         <div className="mb-4">
