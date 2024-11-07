@@ -38,7 +38,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 sm:mx-5 md:mx-20 mt-16 p-16  gap-5">
+        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 sm:mx-5 md:mx-20 mt-16 p-7 lg:p-16  gap-5">
             <div className="sm:mb-7 md:m-auto hidden lg:block lg:m-auto ">
                 <img src={ContactImg} alt="Code Image"
                      className="w-3/5 rounded-2xl transition-filter duration-700 ease-in-out hover:grayscale-0"/>
