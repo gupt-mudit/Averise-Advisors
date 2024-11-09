@@ -32,7 +32,7 @@ export const ServicesCard = () => {
     ];
     return (
         <div className="mt-10 md:p-20">
-            <div className="grid sm:grid-cols-1 lg:grid-cols-3 ">
+            <div className="grid sm:grid-cols-1 lg:grid-cols-3 " >
                 {pricingOptions.map((option, index) => (
                     <div key={index} className="w-full p-2 ">
                         <div className="p-10 border  rounded-xl glass-effect">
