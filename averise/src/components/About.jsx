@@ -3,12 +3,12 @@ import AboutImg from '../assets/About.jpg';
 
 export const About = () => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 sm:mx-5 md:mx-20 mt-16 p-16 gap-5">
+        <div className="p-8 grid grid-cols-1 lg:grid-cols-2 sm:mx-5 md:mx-20 mt-16 xl:p-16 ">
             <div className="hidden lg:block lg:m-auto">
                 <img
                     src={AboutImg}
                     alt="Code Image"
-                    className="w-1/2 rounded-md transition-filter duration-700 ease-in-out hover:grayscale-0"
+                    className="w-3/6 rounded-md transition-filter duration-700 ease-in-out hover:grayscale-0"
                 />
             </div>
             <div className="flex flex-col text-center lg:text-left items-center lg:items-start">
