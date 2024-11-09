@@ -63,7 +63,7 @@ export const ArticleSection = () => {
                     />
                 ))}
             </div>
-            <div className="flex">
+            <div className="flex mt-4 lg:mt-0">
                 <a href="/articles"
                    className="mb-8 px-10 py-1 text-2xl rounded-md bg-gradient-to-r from-green-600 to-green-700 text-white border border-green-400 hover:scale-105 transition-all">
                     <h1>Check More</h1>
