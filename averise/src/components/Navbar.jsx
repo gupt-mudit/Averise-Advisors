@@ -7,8 +7,8 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="flex items-center justify-between px-12 md:px-32  drop-shadow-md bg-white sticky top-0 z-20">
-            <ul className="hidden xl:flex items-center text-base gap-5 tracking-widest font-thin underline underline-offset-8 ">
+        <header className="flex items-center justify-between px-12 md:px-32  drop-shadow-md bg-white sticky top-0 z-20 ">
+            <ul className="hidden xl:flex items-center text-base gap-5 tracking-widest  underline underline-offset-8 ">
                 <li className="p-3 rounded-md cursor-pointer transition-all">
                     <HashLink to="/#home" className="hover:bg-gradient-to-r from-green-500 to-green-900 hover:text-transparent hover:bg-clip-text">home</HashLink>
                 </li>
@@ -22,7 +22,7 @@ export const Navbar = () => {
             <a href="/" className=" flex flex-col items-center hover:scale-105 transition-all -mt-32 xl:-mt-36">
                 <img src={Logo} className="" alt="Vite" />
             </a>
-            <ul className="hidden xl:flex items-center text-base gap-5 tracking-widest font-thin underline underline-offset-8 ">
+            <ul className="hidden xl:flex items-center text-base gap-5 tracking-widest underline underline-offset-8 ">
                 <li className="p-3 rounded-md cursor-pointer transition-all">
                     <HashLink to="/articles" className="hover:bg-gradient-to-r from-green-500 to-green-900 hover:text-transparent hover:bg-clip-text">articles</HashLink>
                 </li>
