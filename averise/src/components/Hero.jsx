@@ -7,8 +7,8 @@ export const Hero = () => {
 
             <div className=" grid grid-cols-1 lg:grid-cols-2 justify-between gap-x-24">
                 <div className="flex flex-col">
-                    <h1 className=" text-5xl xl:text-6xl text-left poppins-regular font tracking-widest lg:mt-16 ">AVERISE
-                        ADVISORS</h1>
+                    <h1 className=" mt-4 text-4xl xl:text-6xl text-left poppins-regular font tracking-widest lg:mt-16 ">Averise
+                        Advisors</h1>
                     <h1 className=" py-2 text-3xl lg:text-4xl text-left font-thin tracking-widest bg-gradient-to-r from-green-500 to-green-900 text-transparent bg-clip-text  dm-serif-text-regular italic">
                         Your Trusted Global Tax Advisor</h1>
                     <p className="text-lg mt-5 text-left items-center max-w-5xl" style={{ textAlign: 'justify', textJustify: 'inter-word' }}>
